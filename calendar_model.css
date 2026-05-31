@@ -1,69 +1,75 @@
-.modal__agendar{
-    border: 2px solid rgb(75,70,74);
-    border-radius: 25px;
-    background-color: lightblue;
-    padding: 20px;
-    font-family: Arial;
-    
-    
-    justify-self: anchor-center;
-    max-width: -webkit-fill-available;
-    display: flex;
-    flex-wrap: wrap;
- }
- .modal_interno{
-    disply: auto;
+.modal__agendar {
+   background-color: #ffffff;
+   border-radius: 24px;
+   padding: 40px;
+   font-family: Arial, sans-serif;
+   max-width: 900px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
 
- }
-.modal_conteudo{
-    padding: 5px;
-    flex-direction: column;
-    font-family: Arial;
-    text-align: center;
- }
- .modal_conteudo h2{
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 5px;
- }
- .modal_conteudo p{
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 5px;
- }
- .modal_conteudo h3{
 
- }
- 
- .data_calendario_dia{
-justify-self: anchor-center;
+.modal__agendar .modal_interno {
+   display: flex;
+   gap: 40px;
+}
 
-    
- }
- .dia_semana{
- justify-self: anchor-center;  
- }
- .dia{
-   padding-left: 20px;
-   padding-right: 20px;
-   
- }
- .dia_data{
-padding: 12px;    
-padding-top: 10px;
 
-margin: 10px;
-margin-left: 5px;
-margin-right: 5px;
+.modal__agendar .modal_interno .coluna_esquerda {
+   flex: 1;
+   border-right: 1px solid #eaeaea;
+   padding-right: 40px;
+}
 
-border: 10px;
-border-left: 10px;
-border: 1px solid black;
-border-radius:15px;
 
-justify-self: anchor-center;
- }
- .dia_mes{
+.modal__agendar .modal_interno .coluna_direita {
+   flex: 1;
+   border-left: 1px solid #eaeaea;
+   padding-left: 40px;
+}
 
-flex-wrap: wrap;
- }
+.modal__agendar .modal_conteudo {
+   text-align: center;
+}
+
+
+.modal__agendar .modal_conteudo h2 {}
+
+
+.modal__agendar .modal_conteudo p {}
+
+.modal__agendar .modal_conteudo h3 {}
+
+.modal__agendar .calendario_tabela {
+   margin: 0 auto;
+   border-collapse: collapse;
+
+}
+
+.modal__agendar .calendario_tabela th {
+   padding: 10px;
+}
+
+.modal__agendar .calendario_corpo .dia_data {
+   width: 40px;
+   height: 40px;
+   border-radius: 15px;
+   border: 1px solid black;
+   background-color: white;
+   cursor: pointer;
+}
+
+.modal__agendar .horarios-disponiveis{
+   margin-top: 20px;
+   text-align: left;
+}
+
+.modal__agendar .horarios-disponiveis h4 {
+   margin-bottom: 10px;
+}
+
+.modal__agendar .horarios-disponiveis .cartao-medico {
+   display: flex;
+}
+.oculto{
+   display: none !important;
+}
