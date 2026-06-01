@@ -1,152 +1,184 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<link rel="stylesheet" href="calendar_model.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendar Consulta</title>
-    <link rel="stylesheet" href="calendar_model.css">
-</head>
+<input type="checkbox" id="fechar_modal" class="gatilho_oculto">
 
 <body></body>
 
 <div class="modal__agendar">
+    
+    <input type="radio" id="mostrar_medicos" class="gatilho_oculto">
 
-    <div class=" modal_interno">
-        <div class="modal_conteudo">
-            <h2>Agendar Consulta</h2>
-            <p> Selecione uma data para ver os horários disponíveis</p>
-            <h3>Junho de 2026</h3>
-        </div>
-
-        <div class="dia_semana">
-            <span class="dia">D</span>
-            <span class="dia">S</span>
-            <span class="dia">T</span>
-            <span class="dia">Q</span>
-            <span class="dia">Q</span>
-            <span class="dia">S</span>
-            <span class="dia">S</span>
-        </div>
+    <div class="modal_interno">
         
-        <div class="dia_mes">
-            <button class="dia_data">1</button>
-            <button class="dia_data">2</button>
-            <button class="dia_data" disabled>3</button>
-            <button class="dia_data">4</button>
-            <button class="dia_data">5</button>
-            <button class="dia_data">6</button>
-            <button class="dia_data" disabled>7</button>
-            <button class="dia_data">8</button>
-            <button class="dia_data">9</button>
-            <button class="dia_data">10</button>
-            <button class="dia_data">11</button>
-            <button class="dia_data" disabled>12</button>
-            <button class="dia_data">13</button>
-            <button class="dia_data">14</button>
-            <button class="dia_data" disabled>15</button>
-            <button class="dia_data">16</button>
-            <button class="dia_data">17</button>
-            <button class="dia_data">18</button>
-            <button class="dia_data">19</button>
-            <button class="dia_data">20</button>
-            <button class="dia_data" disabled>21</button>
-            <button class="dia_data">22</button>
-            <button class="dia_data" disabled>23</button>
-            <button class="dia_data">24</button>
-            <button class="dia_data">25</button>
-            <button class="dia_data">26</button>
-            <button class="dia_data">27</button>
-            <button class="dia_data">28</button>
-            <button class="dia_data">29</button>
-            <button class="dia_data">30</button>
+        <div class="coluna_esquerda">
+            <div class="modal_conteudo">
+                <h2>Agendar Consulta</h2>
+                <p>Selecione uma data para ver os horários disponíveis.</p>
+                <h3 class="mes_destaque">Junho De 2026</h3>
+            </div>
+
+            <table class="calendario_tabela">
+                <thead>
+                    <tr class="calendario_linha_semana">
+                        <th class="dia_semana">D</th>
+                        <th class="dia_semana">S</th>
+                        <th class="dia_semana">T</th>
+                        <th class="dia_semana">Q</th>
+                        <th class="dia_semana">Q</th>
+                        <th class="dia_semana">S</th>
+                        <th class="dia_semana">S</th>
+                    </tr>
+                </thead>
+                <tbody class="calendario_corpo">
+                    <tr>
+                        <td></td>
+                        <td><label for="mostrar_medicos" class="dia_data">1</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">2</label></td>
+                        <td><button class="dia_data" disabled>3</button></td>
+                        <td><label for="mostrar_medicos" class="dia_data">4</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">5</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">6</label></td>
+                    </tr>
+                    <tr>
+                        <td><button class="dia_data" disabled>7</button></td>
+                        <td><label for="mostrar_medicos" class="dia_data">8</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">9</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">10</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">11</label></td>
+                        <td><button class="dia_data" disabled>12</button></td>
+                        <td><label for="mostrar_medicos" class="dia_data">13</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mostrar_medicos" class="dia_data">14</label></td>
+                        <td><button class="dia_data" disabled>15</button></td>
+                        <td><label for="mostrar_medicos" class="dia_data">16</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">17</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">18</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">19</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">20</label></td>
+                    </tr>
+                    <tr>
+                        <td><button class="dia_data" disabled>21</button></td>
+                        <td><label for="mostrar_medicos" class="dia_data">22</label></td>
+                        <td><button class="dia_data" disabled>23</button></td>
+                        <td><label for="mostrar_medicos" class="dia_data">24</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">25</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">26</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">27</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mostrar_medicos" class="dia_data">28</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">29</label></td>
+                        <td><label for="mostrar_medicos" class="dia_data">30</label></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
+        <div class="coluna_direita">
+            <p class="mensagem_horario">Selecione uma data no calendário para ver a disponibilidade dos profissionais.</p>
+            
+            <input type="radio" name="horario_escolhido" id="hora_1" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_2" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_3" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_4" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_5" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_6" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_7" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_8" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_9" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_10" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_11" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_12" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_13" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_14" class="gatilho_oculto gatilho_horario">
+            <input type="radio" name="horario_escolhido" id="hora_15" class="gatilho_oculto gatilho_horario">
 
+            <div class="horarios-disponiveis">
+                <h4>Profissionais Disponíveis</h4>
 
-
-
-        <p class="mensagem_horario">Selecione uma data no calendário para ver os horários disponíveis</p>
-
-        <div class="horarios-disponiveis">
-            <h4>Profissionais Disponíveis</h4>
-
-            <div class="cartao_medico">
-                <div class="medico_perfil">
-                    <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
-                    <h5 class="medico_nome">Dr.Guilherme Silva</h5>
-                    <span class="medico_avaliacao">4.8</span>
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto">
+                        <div class="medico_info">
+                            <h5 class="medico_nome">Dr. Guilherme Silva</h5>
+                            <span class="medico_avaliacao">⭐ 4.8</span>
+                        </div>
+                    </div>
+                    <div class="medico_horas">
+                        <label for="hora_1" class="horario_disponivel">09:00</label>
+                        <label for="hora_2" class="horario_disponivel">10:00</label>
+                        <label for="hora_3" class="horario_disponivel">14:00</label>
+                    </div>
                 </div>
-                <div class="medico_horas">
-                    <button class="horario_disponivel">09:00</button>
-                    <button class="horario_disponivel">10:00</button>
-                    <button class="horario_disponivel">14:00</button>
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto">
+                        <div class="medico_info">
+                            <h5 class="medico_nome">Dr. João Pedro</h5>
+                            <span class="medico_avaliacao">⭐ 4.5</span>
+                        </div>
+                    </div>
+                    <div class="medico_horas">
+                        <label for="hora_4" class="horario_disponivel">07:00</label>
+                        <label for="hora_5" class="horario_disponivel">12:00</label>
+                        <label for="hora_6" class="horario_disponivel">17:00</label>
+                    </div>
+                </div>
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto">
+                        <div class="medico_info">
+                            <h5 class="medico_nome">Dra. Maria Silva</h5>
+                            <span class="medico_avaliacao">⭐ 3.6</span>
+                        </div>
+                    </div>
+                    <div class="medico_horas">
+                        <label for="hora_7" class="horario_disponivel">08:00</label>
+                        <label for="hora_8" class="horario_disponivel">10:00</label>
+                        <label for="hora_9" class="horario_disponivel">13:00</label>
+                    </div>
+                </div>
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto">
+                        <div class="medico_info">
+                            <h5 class="medico_nome">Dra. Joselaine Valaski</h5>
+                            <span class="medico_avaliacao">⭐ 4.7</span>
+                        </div>
+                    </div>
+                    <div class="medico_horas">
+                        <label for="hora_10" class="horario_disponivel">08:00</label>
+                        <label for="hora_11" class="horario_disponivel">16:00</label>
+                        <label for="hora_12" class="horario_disponivel">17:20</label>
+                    </div>
+                </div>
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto">
+                        <div class="medico_info">
+                            <h5 class="medico_nome">Dr. Evandro Zatti</h5>
+                            <span class="medico_avaliacao">⭐ 4.5</span>
+                        </div>
+                    </div>
+                    <div class="medico_horas">
+                        <label for="hora_13" class="horario_disponivel">09:00</label>
+                        <label for="hora_14" class="horario_disponivel">14:00</label>
+                        <label for="hora_15" class="horario_disponivel">16:00</label>
+                    </div>
                 </div>
             </div>
 
-            <div class="cartao_medico">
-                <div class="medico_perfil">
-                    <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
-                    <h5 class="medico_nome">Dr.João Pedro</h5>
-                    <span class="medico_avaliacao">4.5</span>
-                </div>
-
-                <div class="medico_horas">
-                    <button class="horario_disponivel">07:00</button>
-                    <button class="horario_disponivel">12:00</button>
-                    <button class="horario_disponivel">17:00</button>
-                </div>
-            </div>
-
-
-            <div class="cartao_medico">
-                <div class="medico_perfil">
-                    <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
-                    <h5 class="medico_nome">Dra.Maria Silva</h5>
-                    <span class="medico_avaliacao">3.6</span>
-                </div>
-
-                <div class="medico_horas">
-                    <button class="horario_disponivel">08:00</button>
-                    <button class="horario_disponivel">10:00</button>
-                    <button class="horario_disponivel">13:00</button>
-                </div>
-
-            </div>
-
-            <div class="cartao_medico">
-
-                <div class="medico_perfil">
-                    <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
-                    <h5 class="medico_nome">Dra.Joselaine Valaski</h5>
-                    <span class="medico_avaliacao">4.7</span>
-                </div>
-
-                <div class="medico_horas">
-                    <button class="horario_disponivel">08:00</button>
-                    <button class="horario_disponivel">16:00</button>
-                    <button class="horario_disponivel">17:20</button>
-                </div>
-
-            </div>
-
-            <div class="cartao_medico">
-
-                <div class="medico_perfil">
-                    <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
-                    <h5 class="medico_nome">Dr.Evandro Zatti</h5>
-                    <span class="medico_avaliacao">4.5</span>
-                </div>
-                <div class="medico_horas">
-                    <button class="horario_disponivel">09:00</button>
-                    <button class="horario_disponivel">14:00</button>
-                    <button class="horario_disponivel">16:00</button>
-                </div>
-            </div>
+            <label for="fechar_modal" class="btn_confirmar">Confirmar Agendamento</label>
         </div>
 
     </div>
-
 </div>
-
-</html>
