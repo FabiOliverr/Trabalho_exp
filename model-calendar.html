@@ -2,12 +2,11 @@
 
 <input type="checkbox" id="fechar_modal" class="gatilho_oculto">
 
-<body></body>
-
 <div class="modal__agendar">
     
     <input type="radio" id="mostrar_medicos" class="gatilho_oculto">
 
+<<<<<<< HEAD
     <div class="modal_interno">
         
         <div class="coluna_esquerda">
@@ -18,6 +17,19 @@
             </div>
 
             <table class="calendario_tabela">
+=======
+    <div class=" modal_interno">
+
+        <div class="coluna_direita">
+            <div class="modal_conteudo">
+                <h2>Agendar Consulta</h2>
+                <p> Selecione uma data para ver os horários disponíveis</p>
+                <h3>Junho de 2026</h3>
+            </div>
+
+            <table class="calendario_tabela">
+
+>>>>>>> f941542e69fa15f87260ea09e027699971f4e2c7
                 <thead>
                     <tr class="calendario_linha_semana">
                         <th class="dia_semana">D</th>
@@ -29,6 +41,7 @@
                         <th class="dia_semana">S</th>
                     </tr>
                 </thead>
+<<<<<<< HEAD
                 <tbody class="calendario_corpo">
                     <tr>
                         <td></td>
@@ -70,6 +83,54 @@
                         <td><label for="mostrar_medicos" class="dia_data">28</label></td>
                         <td><label for="mostrar_medicos" class="dia_data">29</label></td>
                         <td><label for="mostrar_medicos" class="dia_data">30</label></td>
+=======
+
+                <tbody class="calendario_corpo">
+                    <tr>
+                        <td></td>
+                        <td><button class="dia_data">1</button></td>
+                        <td><button class="dia_data">2</button></td>
+                        <td><button class="dia_data" disabled>3</button></td>
+                        <td><button class="dia_data">4</button></td>
+                        <td><button class="dia_data">5</button></td>
+                        <td><button class="dia_data">6</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="dia_data" disabled>7</button></td>
+                        <td><button class="dia_data">8</button></td>
+                        <td><button class="dia_data">9</button></td>
+                        <td><button class="dia_data">10</button></td>
+                        <td><button class="dia_data">11</button></td>
+                        <td><button class="dia_data" disabled>12</button></td>
+                        <td><button class="dia_data">13</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="dia_data">14</button></td>
+                        <td><button class="dia_data" disabled>15</button></td>
+                        <td><button class="dia_data">16</button></td>
+                        <td><button class="dia_data">17</button></td>
+                        <td><button class="dia_data">18</button></td>
+                        <td><button class="dia_data">19</button></td>
+                        <td><button class="dia_data">20</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="dia_data" disabled>21</button></td>
+                        <td><button class="dia_data">22</button></td>
+                        <td><button class="dia_data" disabled>23</button></td>
+                        <td><button class="dia_data">24</button></td>
+                        <td><button class="dia_data">25</button></td>
+                        <td><button class="dia_data">26</button></td>
+                        <td><button class="dia_data">27</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="dia_data">28</button></td>
+                        <td><button class="dia_data">29</button></td>
+                        <td><button class="dia_data">30</button></td>
+>>>>>>> f941542e69fa15f87260ea09e027699971f4e2c7
                         <td></td>
                         <td></td>
                         <td></td>
@@ -79,6 +140,7 @@
             </table>
         </div>
 
+<<<<<<< HEAD
         <div class="coluna_direita">
             <p class="mensagem_horario">Selecione uma data no calendário para ver a disponibilidade dos profissionais.</p>
             
@@ -178,7 +240,98 @@
             </div>
 
             <label for="fechar_modal" class="btn_confirmar">Confirmar Agendamento</label>
-        </div>
+=======
+        <p class="mensagem_horario">Selecione uma data no calendário para ver os horários disponíveis</p>
 
+        <div class="coluna_direita">
+
+            <div class="horarios-disponiveis oculto">
+                <h4>Profissionais Disponíveis</h4>
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
+                        <h5 class="medico_nome">Dr.Guilherme Silva</h5>
+                        <span class="medico_avaliacao">4.8</span>
+                    </div>
+                    <div class="medico_horas">
+                        <button class="horario_disponivel">09:00</button>
+                        <button class="horario_disponivel">10:00</button>
+                        <button class="horario_disponivel">14:00</button>
+                    </div>
+                </div>
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
+                        <h5 class="medico_nome">Dr.João Pedro</h5>
+                        <span class="medico_avaliacao">4.5</span>
+                    </div>
+
+                    <div class="medico_horas">
+                        <button class="horario_disponivel">07:00</button>
+                        <button class="horario_disponivel">12:00</button>
+                        <button class="horario_disponivel">17:00</button>
+                    </div>
+                </div>
+
+
+                <div class="cartao_medico">
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
+                        <h5 class="medico_nome">Dra.Maria Silva</h5>
+                        <span class="medico_avaliacao">3.6</span>
+                    </div>
+
+                    <div class="medico_horas">
+                        <button class="horario_disponivel">08:00</button>
+                        <button class="horario_disponivel">10:00</button>
+                        <button class="horario_disponivel">13:00</button>
+                    </div>
+
+                </div>
+
+                <div class="cartao_medico">
+
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
+                        <h5 class="medico_nome">Dra.Joselaine Valaski</h5>
+                        <span class="medico_avaliacao">4.7</span>
+                    </div>
+
+                    <div class="medico_horas">
+                        <button class="horario_disponivel">08:00</button>
+                        <button class="horario_disponivel">16:00</button>
+                        <button class="horario_disponivel">17:20</button>
+                    </div>
+
+                </div>
+
+                <div class="cartao_medico">
+
+                    <div class="medico_perfil">
+                        <img class="medico_foto" src="perfil.png" alt="Foto do Médico">
+                        <h5 class="medico_nome">Dr.Evandro Zatti</h5>
+                        <span class="medico_avaliacao">4.5</span>
+                    </div>
+                    <div class="medico_horas">
+                        <button class="horario_disponivel">09:00</button>
+                        <button class="horario_disponivel">14:00</button>
+                        <button class="horario_disponivel">16:00</button>
+                    </div>
+                </div>
+            </div>
+>>>>>>> f941542e69fa15f87260ea09e027699971f4e2c7
+        </div>
     </div>
+<<<<<<< HEAD
 </div>
+=======
+
+
+</div>
+
+<body></body>
+
+</html>
+>>>>>>> f941542e69fa15f87260ea09e027699971f4e2c7
