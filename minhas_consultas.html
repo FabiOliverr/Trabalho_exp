@@ -18,7 +18,7 @@
             <div class="medico_perfil_grande">
                 <img class="medico_foto_grande" src="perfil.png" alt="Dra. Mariana Souza">
                 <div class="medico_info_texto">
-                    <h3 class="medico_nome_destaque">Dra. Mariana Souza</h3>
+                    <h3 class="medico_nome_destaque" id="nome_medico_selecionado">Dra. Mariana Souza</h3>
                     <span class="medico_especialidade">Transtornos Alimentares</span>
                 </div>
             </div>
@@ -26,8 +26,8 @@
             <div class="consulta_agendamento">
                 <span class="badge_confirmada">Confirmada</span>
                 <div class="consulta_data_hora">
-                    <span>📅 12 de junho</span>
-                    <span>⏰ 16:00</span>
+                    <span id="data_consulta_selecionada">📅 12 de junho</span>
+                    <span id="hora_consulta_selecionada">⏰ 16:00</span>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="consulta_acoes">
             <button class="btn_acao btn_cancelar">Cancelar Consulta</button>
             
-            <a href="model-calendar.html" class="btn_acao btn_remarcar">Remarcar</a>
+            <a href="modal_agendar.html" class="btn_acao btn_remarcar">Remarcar</a>
             
             <button class="btn_acao btn_acessar">🎥 Acessar Consulta</button>
         </div>
@@ -45,3 +45,5 @@
     </div>
 
 </div>
+
+<script src="minhas_consultas.js"></script>
