@@ -119,8 +119,9 @@
 .modal__agendar .medico_foto {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 8px;
     object-fit: cover;
+    border: 2px solid #f0f0f0;
 }
 
 .modal__agendar .medico_info h5 {

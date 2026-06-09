@@ -2,6 +2,15 @@
 // Adicionar alteração de texto do médico selecionado no modal_agendar.
 // Quando o usuário clicar no botão de horário disponível deste médico na página de agendamento, o nome do médico deve ser atualizado no modal_agendar para refletir a escolha do usuário.  
 
+// Mapear médicos com suas fotos
+const medicosInfo = {
+    "Dr. Guilherme Silva": "img/medico_1",
+    "Dr. João Pedro": "img/medico_2",
+    "Dra. Maria Silva": "img/Medico_3",
+    "Dra. Joselaine Valaski": "img/medico_4",
+    "Dr. Evandro Zatti": "perfil.png"
+};
+
 // Pegar o botão de confirmação do ID do médico escolhido.
 let botaoConfirmarMedico = document.getElementById("btn_ir_para_consultas");
 
@@ -14,10 +23,12 @@ if (inputSelecionado && inputData){
     let medico = inputSelecionado.dataset.medico; // Pegando o nome atribuído.
     let horario = inputSelecionado.value; // Pegando o horário atribuído.
     let data =  inputData.value; // Pegando a data escolhida.
+    let fotoMedico = medicosInfo[medico] || "perfil.png"; // Pegando a foto do médico
     
     localStorage.setItem("médicoSelecionado", medico); //Guardando elementos na memoria do computador.
     localStorage.setItem("horárioSelecionado", horario);
     localStorage.setItem("dataSelecionada", data);
+    localStorage.setItem("fotoMédicoSelecionado", fotoMedico); // Guardando a foto do médico
 
     console.log("Médico selecionado:" + medico + "às" + horario)
     window.location.href = "minhas_consultas.html"; // Redirecionar para a página de minhas consultas.

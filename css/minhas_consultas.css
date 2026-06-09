@@ -58,9 +58,10 @@
 .painel_consultas .medico_foto_grande {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 12px;
     object-fit: cover;
     background-color: #e0f7fa;
+    border: 2px solid #f0f0f0;
 }
 
 .painel_consultas .medico_nome_destaque {
